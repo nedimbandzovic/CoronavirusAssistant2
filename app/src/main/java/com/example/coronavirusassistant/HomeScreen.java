@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -17,6 +18,7 @@ import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -27,7 +29,7 @@ import java.util.Random;
 public class HomeScreen extends AppCompatActivity {
 
     TextView tName, tJMBG, tVac, tVacp,tDate;
-    Button button;
+    Button button, button2;
     Bitmap bmp,bmp2;
     Bitmap scaledbmp,scaledbmp2;
     int pageWidth=1200;
@@ -48,6 +50,7 @@ public class HomeScreen extends AppCompatActivity {
         Random rand = new Random();
         bmp2=BitmapFactory.decodeResource(getResources(), R.drawable.qrcode);
         scaledbmp2=Bitmap.createScaledBitmap(bmp2, 400, 400, false);
+        button2=findViewById(R.id.logout);
 
 
         rand_int = rand.nextInt(10000000);
@@ -207,17 +210,25 @@ public class HomeScreen extends AppCompatActivity {
                     myPdfDocument.finishPage(myPage1);
 
                     File file=new File (Environment.getExternalStorageDirectory(),"/COVID-19Potvrda.pdf");
+                    Toast.makeText(getApplicationContext(), "Potvrda napravljena, istu možete naći u internoj memoriji uređaja", Toast.LENGTH_SHORT).show();
+
                     try {
                         myPdfDocument.writeTo(new FileOutputStream(file));
 
-                }catch (IOException e){
+
+                    }catch (IOException e){
                         e.printStackTrace();
                     }
 
                     myPdfDocument.close();
             }
         });
-
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeScreen.this, Login.class));
+            }
+        });
 
 
 
