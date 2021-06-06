@@ -176,6 +176,16 @@
             android:src="@drawable/qrcode" />
 
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="ISPRINTAJ POTVRDU"
+
+
+            android:id="@+id/generatePDF"/>
+
+
 
 
     </LinearLayout>
