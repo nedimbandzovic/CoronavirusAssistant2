@@ -57,6 +57,7 @@ public class Login extends AppCompatActivity {
                                 String jmbg=user.getJMBG();
                                 String vac=user.getVaccine();
                                 String vacp=user.getVaccinationPlace();
+                                String date=user.getVaccinationDate();
 
                                 Intent intent=new Intent (Login.this,HomeScreen.class);
                                 Bundle extras = new Bundle();
@@ -64,6 +65,8 @@ public class Login extends AppCompatActivity {
                                 extras.putString("jmbg", jmbg);
                                 extras.putString("vac", vac);
                                 extras.putString("vacp", vacp);
+                                extras.putString("date", date);
+
                                 intent.putExtras(extras);
                                 startActivity(intent);
 

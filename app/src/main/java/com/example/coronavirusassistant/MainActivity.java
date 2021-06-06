@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.sql.Timestamp;
+
 public class MainActivity extends AppCompatActivity  {
 
     @Override
@@ -46,7 +48,10 @@ public class MainActivity extends AppCompatActivity  {
 
         register=findViewById(R.id.register);
         login=findViewById(R.id.login);
-
+        long offset = Timestamp.valueOf("2021-01-01 09:00:00").getTime();
+        long end = Timestamp.valueOf("2022-01-01 21:00:00").getTime();
+        long diff = end - offset + 1;
+        Timestamp rand = new Timestamp(offset + (long)(Math.random() * diff));
         register.setOnClickListener(new View.OnClickListener(){
 
 
@@ -59,6 +64,7 @@ public class MainActivity extends AppCompatActivity  {
                 user.setJMBG(JMBG.getText().toString());
                 user.setVaccine(dropdown.getItemAtPosition(dropdown.getSelectedItemPosition()).toString());
                 user.setVaccinationPlace(seconddropdown.getItemAtPosition(seconddropdown.getSelectedItemPosition()).toString());
+                user.setVaccinationDate(rand.toString());
                 if (validateInput(user)){
 
                     UserDatabase userDatabase=UserDatabase.getUserDatabase(getApplicationContext());
@@ -97,6 +103,8 @@ public class MainActivity extends AppCompatActivity  {
 
             }
         });
+
+
 
 
 

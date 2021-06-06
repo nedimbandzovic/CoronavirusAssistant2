@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class HomeScreen extends AppCompatActivity {
 
-    TextView tName, tJMBG, tVac, tVacp;
+    TextView tName, tJMBG, tVac, tVacp,tDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,8 @@ public class HomeScreen extends AppCompatActivity {
         tJMBG = findViewById(R.id.jmbg);
         tVac = findViewById(R.id.vac);
         tVacp = findViewById(R.id.vacp);
+        tDate = findViewById(R.id.date);
+
 
 
 
@@ -29,5 +31,7 @@ public class HomeScreen extends AppCompatActivity {
         tVac.setText(vac);
         String vacp=getIntent().getStringExtra("vacp");
         tVacp.setText(vacp);
+        String date=getIntent().getStringExtra("date");
+        tDate.setText(date);
     }
 }
