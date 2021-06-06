@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CoronavirusAssistant</string>
+
+
+    <string-array name="vaccines">
+        <item>Sinopharm BBiPV</item>
+        <item>Sinovac</item>
+        <item>Sputnik V</item>
+        <item>Pfizer-BioNTech</item>
+        <item>AstraZeneca-CoviShield</item>
+        <item>Johnson and Johnson</item>
+        <item>Moderna</item>
+        <item>Sputnik V Lite</item>
+    </string-array>
+</resources>

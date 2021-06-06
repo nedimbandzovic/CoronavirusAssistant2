@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/dea5551a58c21c1c87c711f01520daac"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="128dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+
+        android:src="@drawable/grbovi" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="Bosna i Hercegovina \n Federacija Bosne i Hercegovine \n Kanton Sarajevo \n \n MINISTARSTVO ZDRAVSTVA KANTONA SARAJEVO \n VAKCINACIJA PROTIV COVID-19 \n \n REGISTRACIJA KORISNIKA"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+
+    <EditText
+
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Upiši korisničko ime"
+        android:textColorHint="@android:color/black"
+
+        android:textColor="#000000"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Upiši šifru"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="@android:color/black"
+
+        android:id="@+id/password"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Ime i prezime "
+        android:textColor="#000000"
+        android:textColorHint="@android:color/black"
+
+        android:id="@+id/NameAndSurname"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="JMBG"
+        android:textColor="#000000"
+        android:textColorHint="@android:color/black"
+        android:id="@+id/JMBG"/>
+
+
+
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="Odaberite vakcinu"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="italic
+" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+
+        android:gravity="left"
+        android:padding="5dip"
+        android:textColor="#070707"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="Odaberite mjesto gdje se želite vakcinisati u Kantonu Sarajevo"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:textStyle="italic
+" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:padding="5dip"
+        android:textColor="#070707"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="PRIJAVI SE ZA VAKCINACIJU"
+
+
+        android:id="@+id/register"/>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="Već si prijavljen?"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:textStyle="italic
+" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="PRIJAVI SE"
+
+
+        android:id="@+id/login"/>
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+
+
