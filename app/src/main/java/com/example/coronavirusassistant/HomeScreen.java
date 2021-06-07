@@ -209,7 +209,9 @@ public class HomeScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeScreen.this, Login.class));
+                finish();
             }
+
         });
 
 
