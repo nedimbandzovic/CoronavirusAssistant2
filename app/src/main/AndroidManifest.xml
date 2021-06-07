@@ -13,7 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CoronavirusAssistant"
         android:usesCleartextTraffic="true">
-        <activity android:name=".mcpbih"></activity>
+        <activity android:name=".pfizer"></activity>
+        <activity android:name=".jj" />
+        <activity android:name=".sinovac" />
+        <activity android:name=".sinopharm" />
+        <activity android:name=".moderna" />
+        <activity android:name=".astrazeneca" />
+        <activity android:name=".SputnikV" />
+        <activity android:name=".vaccines" />
+        <activity android:name=".mcpbih" />
         <activity android:name=".mzfbih" />
         <activity android:name=".mzks" />
         <activity android:name=".covid19ba" />

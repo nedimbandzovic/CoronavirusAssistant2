@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dea5551a58c21c1c87c711f01520daac"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="128dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/grbovi" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Bosna i Hercegovina \n Federacija Bosne i Hercegovine \n Kanton Sarajevo \n \n MINISTARSTVO ZDRAVSTVA KANTONA SARAJEVO \n VAKCINACIJA PROTIV COVID-19 \n \n INFORMACIJE O VAKCINI"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="297dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/pfizer" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Pfizer - BioNTech"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:text="Pfizer vakcina/ Pfizer cjepivo/Fajzer vakcina, koju još možete naći pod imenima Comirnaty i BNT162b2 je mRNA / RNK vakcina koju je razvila mala biotehnološka kompanija BioNTech iz Njemačke u saradnji s kompanijom Pfizer. Radi se o bezbjednoj, visokoefikasnoj vakcini koja ne sadrži toksične materije.
+
+Nemojte prema ovoj vakcini imati nepovjerenje jer se zasniva na jednoj novoj tehnologiji! Pa i adenovirusne vakcine poput Sputnjik V, AstraZeneca se zasnivaju na modernim tehnologijama i to nas ne treba odbiti.
+
+Jako je dobro ispitano da li su ove vakcine sigurne i to prvo na životinjama, pa potom na ljudima u kliničkim studijama. Zapravo – vakcine starije generacije, koje su se proizvodile osamdesetih bile su manje bezbjedne: neke starije MMR vakcine su imale više nuspojava, kao i oralna vakcina protiv dječije paralize, a te vakcine se više ni ne daju. Vakcine postaju sve bezbjednije i čak manje bolne. Comirnaty je vakcina koje se primjenjuje za sprječavanje bolesti COVID-19 prouzročene virusom SARS-CoV-2.
+Daje odraslima i adolescentima u dobi od 16 godina i starijima.
+Ova vakcina potiče imunološki sistem (prirodni obrambeni sistem tijela) na stvaranje antitijela i T limfocita (stanični imunitet) koji djeluju protiv virusa i tako štite od bolesti COVID-19. Vakcine protiv korone zasnovane na informativnoj RNK, glasničkoj RNK tj. messenger RNA ubacuju u naše ćelije lipidne nanočestice u kojima se nalazi onaj segment genetičke poruke virusa SARS-CoV-2 zadužen za sintezu Spike proteina. RNK je nestabilna i da bi se zaštitila, da ne bi degradirala sistem dostave uključuju “mjehur” od lipidnih komponenti (uglavnom holesterol i fosfoholin, koji čine membrane naših ćelija, te PEG). Upravo stoga se ova vakcina distribuira i čuva u ultrahladnom lancu na -70 oC – da bi se sačuvala molekula RNK i taj lipidni mjehur, jer se on topi na višim temperaturama i razgrađuje.
+
+Dakle, taj lipidni ovoj “zamjenjuje” virus, i mi na dosta sigurniji način od starih vakcina dobijamo instrukciju za sintezu antigena, koji će izazvati imunološku reakciju. to nisu nikakvi “nano-roboti ili čipovi, samo nano balončići od molekula masti."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Efikasnost"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/unnamed" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:textAlignment="center"
+            android:text="Šest mjeseci nakon što su dobili drugu dozu cjepiva Pfizer-BioNTech u sklopu kliničkog ispitivanja na 46.000 osoba, dobrovoljci su ostali više od 90% zaštićeni od simptomatskog COVID-19 i još bolje zaštićeni od teške bolesti, pokazalo je novo istraživanje tvrtke. (izvor: saopštenje Pfizer, obnova analize poataka dobrovoljaca nakon iz Faze 3 kliničkih ispitivanja). Procjene sigurnosti i efikasnosti ove vakcine u fazi 3 kliničkih studija na preko 30 000 dobrovoljaca su pokazale da je ova vakcina efikasna 95% nakon 2 doze. Nakon 6 mjeseci, ova efikasnost je malo opala i iznosi oko 90%, što je i dalje visoko."
+            android:textSize="10sp"
+            android:textColor="#000000"
+
+            android:textStyle="italic" />
+
+
+
+        <Button
+            android:id="@+id/pfizerbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+
+
+            android:text="VRATI SE NA GLAVNI MENI" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dea5551a58c21c1c87c711f01520daac"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="128dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/grbovi" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Bosna i Hercegovina \n Federacija Bosne i Hercegovine \n Kanton Sarajevo \n \n MINISTARSTVO ZDRAVSTVA KANTONA SARAJEVO \n VAKCINACIJA PROTIV COVID-19 \n \n INFORMACIJE O VAKCINI"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="297dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/moderna" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Moderna"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:text="Vakcina sadrži recept (glasnik RNA) za šiljke korona virusa. Tijelo proizvodi
+bezopasne kopije ovih šiljaka na kojima imunološki sistem može vježbati. Na ovaj
+način, imunološki sistem oči kako prepoznati šiljke korona virusa i može odbraniti
+tijelo ako se zarazi sa virusom. Glasnik RNA se brzo razgrađuje u tijelu i nema
+utjecaja na genetski materijal.
+Vakcina ne sadrži živi virus i ne uzrokuje COVID-19 bolest. Vakcina protiv korona
+virusa djeluje tako da sprječava bolest. Ne može izliječiti bolest koja je u toku.
+Ova metoda izrade vakcina se nije ranije koristila za zarazne bolesti kod ljudi, ali
+tehnologija je poznata i koristi se za liječenje raka. Vakcina se ubrizgava u nadlakticu. Primićete dvije doze vakcine u razmaku od
+najmanje 28 dan. Važno je da primite drugu dozu u propisano vrijeme. Prije nego
+primite vakcinu, bićete pitani da li se osjećate dobro i da li ste imali bilo kakve reakcije
+na ostale vakcine koje ste primili. Zapamtite da kažete ako ste trudni, ako imate neke
+alergije, koristite lijekove ili ako imate drugih zdravstvenih problema. Uobičajno je
+odgađanje vakcinacije zbog akutne bolesti ili temperature više od 38°C. Nakon što
+primite vakcinu, zamoliće Vas se da sačekate 20 minuta."
+
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Efikasnost"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/unnamed" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:text="Ova vakcina štiti od bolesti uzrokovane novim korona virusom. U studijama o vakcini,
+dvije sedmice nakon druge doze, oko 94 % ovih vakcinacija je imalo zaštitu.
+Za starije, evo nekoliko podataka. Studije ukazuju na to da vakcina također pruža
+Februar 2021, bosnisk
+zaštitu protiv bolesti korona virusa koja je dovoljno ozbiljna da zahtjeva bolničko
+liječenje. Još ne znamo koliko dugo zaštita traje. Ako se zaštita smanji s vremenom,
+možda će biti potrebne pojačane doze. Još ne znamo koliko dugo će zaštita trajati.
+Ako se zaštita smanji s vremenom, možda će biti potrebne pojačane doze. Kako
+vakcina sprečava bolest, također će spriječiti širenje zaraze, ali još ne znamo u kojoj
+mjeri. Stoga, važno je da se nastave pratiti trenutni savjeti za kontrolu zaraze."
+
+            android:textStyle="italic" />
+
+
+
+        <Button
+            android:id="@+id/modernabutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+
+
+            android:text="VRATI SE NA GLAVNI MENI" />
+
+
+    </LinearLayout>
+</ScrollView>

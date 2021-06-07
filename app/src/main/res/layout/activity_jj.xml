@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dea5551a58c21c1c87c711f01520daac"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="128dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/grbovi" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Bosna i Hercegovina \n Federacija Bosne i Hercegovine \n Kanton Sarajevo \n \n MINISTARSTVO ZDRAVSTVA KANTONA SARAJEVO \n VAKCINACIJA PROTIV COVID-19 \n \n INFORMACIJE O VAKCINI"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="297dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/jj" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Johnson and Johnson"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:text="Johnson and Johnson je jedina vakcina protiv COVID-19 za čiju je efikasnost dovoljna jedna doza, a 66 posto je efikasna protiv korona virusa.
+
+Istraživanje u kojem je učestvovalo 44.000 volontera sprovedeno je na tri kontinenta i na više sojeva korona virusa.Jedna doza (0,5 ml) sadrži:
+Adenovirus tipa 26 koji kodira glikoprotein šiljka virusa SARS-CoV-2 (Ad26.COV2-S)*, najmanje
+8,92 log10 infektivnih jedinica (engl. infectious units, Inf.U).
+* Proizvedeno u staničnoj liniji PER.C6 TetR tehnologijom rekombinantne DNA.
+Ovo cjepivo sadrži genetski modificirane organizme (GMO)."
+
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Efikasnost"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/unnamed" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:text="Iz kompanije su također saopštili da njihovi preliminarni rezultati pokazuju da jedna doza spriječava 85 posto teških slučajeva. Dio testiranja koje je sprovedeno u Južnoj Africi pokazalo je da je JiJ vakcina efikasna samo 57 posto protiv soja koji se razvio u ovoj zemlji.
+
+Američka uprava za hranu i ljekove odobrila je ovu vakcinu krajem februara. Vakcina je također odobrena u Kanadi i Bahreinu.
+
+Svjetska zdravstvena organizacija odobrila 12. marta Johnson i Johnsona vakcinu za hitno korišćenje, uz Pfizer i britansku AstraZenecu."
+
+            android:textStyle="italic" />
+
+
+
+        <Button
+            android:id="@+id/jjbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+
+
+            android:text="VRATI SE NA GLAVNI MENI" />
+
+
+    </LinearLayout>
+</ScrollView>

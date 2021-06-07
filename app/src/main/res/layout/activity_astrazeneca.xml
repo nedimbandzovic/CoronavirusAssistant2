@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dea5551a58c21c1c87c711f01520daac"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="128dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/grbovi" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Bosna i Hercegovina \n Federacija Bosne i Hercegovine \n Kanton Sarajevo \n \n MINISTARSTVO ZDRAVSTVA KANTONA SARAJEVO \n VAKCINACIJA PROTIV COVID-19 \n \n INFORMACIJE O VAKCINI"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="297dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/astrazeneca" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="AstraZeneca - CoviShield"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:text="AstraZeneca vakcina protiv COVID -19 (vakcina protiv korone, AstraZeneca cjepivo) je adenovirusna vakcina koju je švedsko-britanska kompanija AstraZeneca razvijala s Univerzitetom Oksford (Jenner institutom i Oxford Vaccine Group). Nosi nekoliko naziva: sada je registrovana kao Vaxzevria, a prije je bila poznata po imenima AZD1222, ChAdOx1 nCoV-19, COVID-19 Vaccine AstraZeneca te Covishield. Covishield je ista AstraZeneca vakcina, samo se proizvodi u Indijskom institutu za serume prema dogovoru ovog instituta i AstraZeneca. Bazira se na adenovirusu koji inficira čimpanze, a za čovjeka je bezopasan i ne može se replicirati. Skraćenica ChAdOx upravo značava da se radi o adenovirusu (Ad) čimpanzi (Ch) i da je taj virusni vektor razvijen na Oksfordu (Ox)."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Efikasnost"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/unnamed" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:textAlignment="center"
+            android:text="Podaci Univerziteta Oxford znače da po stvaranju zaštitnih antitijela nakon primanja prve doze vakcine, efikasnost AstraZeneca vakcine iznosi oko 76%, a nakon druge doze oko 82% s intervalom pouzdanosti od 95% od 62.7% – 91.7% nakon više od 12 sedmica. Također, ovo znači da je najmanja efikasnost ove vakcine (usljed različitih faktora, napose individualne reakcije na vakcinu, ali i razmaka između doza) oko 62% (1)."
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+
+
+            android:text="VRATI SE NA GLAVNI MENI" />
+
+
+    </LinearLayout>
+</ScrollView>

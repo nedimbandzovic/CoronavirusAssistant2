@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dea5551a58c21c1c87c711f01520daac"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="128dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/grbovi" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Bosna i Hercegovina \n Federacija Bosne i Hercegovine \n Kanton Sarajevo \n \n MINISTARSTVO ZDRAVSTVA KANTONA SARAJEVO \n VAKCINACIJA PROTIV COVID-19 \n \n INFORMACIJE O VAKCINI"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="297dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/sinovac" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Sinovac"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+android:text="Sinovac Biotech je privatna kineska farmaceutska kompanija, a razvili su inaktiviranu vakcinu – cjepivo protiv COVID-19. Cjepivo nosi naziv CoronaVac.
+
+Početkom 2021. godine ispitivanja u Brazilu i Turskoj pokazalo se da vi ovo cjepivo moglo zaštititi od COVID-19, ali rezultati bili drastično drugačiji. To je dijelom bilo i zato što su ispitivanja bila drugačije dizajnirana. Sinovac je proveo ispitivanje Faze I/II na 743 dobrovoljca koje nije otkrilo ozbiljne nuspojave. Inače, očekivane pojave za sve ove vakcine uključuju pojavu temperature, groznice, zimice, bol,crvenilo i otok na mjestu primjene vakcine i te nuspojave se ne smatraju ozbiljnim. To je čak dobar znak – da organizam reaguje na vakcinu. Sinovac je u novembru objavio detalje ispitivanja u medicinskom časopisu Lancet (3), pokazujući razmjerno skromnu proizvodnju antitijela. U julu je Sinovac pokrenuo fazu 3 u Brazilu, a potom i u Indoneziji i Turskoj.
+
+Ova vakcina ima puno odobrenje u Kini, a hito odobrenje u Azerbejdžanu, Brazilu, Kambodži, Čileu, Kolumbiji, Ekvadoru, Hong Kongu, Indoneziji, Laosu, Maleziji, Meksiku, Filipinima, Tajlandu, Turskoj, Ukrajini, Urugvaju, Zimbabveu.
+
+Ova vakcina se daje u 2 doze, u razmaku od 2 sedmice, intramuskularno."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Efikasnost"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/unnamed" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+
+            android:text="U Brazilu je djelotvornost ove kineske vakcine protiv COVID-19 sa ili bez simptoma bila 50%, što je na granici minimuma kojeg je zatražila Svjetska zdravstvena organizacija. U Turskoj je efikasnost CoronaVac protiv COVID-19 s najmanje jednim simptomom bila 83.5%. Sinovac još nije objavio detalje ispitivanja kao preprint ili u medicinskom časopisu. Ipak, Sinovac je 6. februara objavio da je Kina CoronaVac vakcini dala uslovno odobrenje. Druge zemlje također počinju koristiti ovo cjepivo."            android:textSize="10sp"
+            android:textStyle="italic" />
+
+
+
+        <Button
+            android:id="@+id/sinovacbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+
+
+            android:text="VRATI SE NA GLAVNI MENI" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -89,6 +89,14 @@
 
 
             android:text="REGISTRUJ SE" />
+        <Button
+            android:id="@+id/learn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+
+
+            android:text="NAUČI VIŠE O VAKCINAMA" />
 
         <TextView
             style="@style/TextAppearance.AppCompat.Body1"

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dea5551a58c21c1c87c711f01520daac"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="128dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/grbovi" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Bosna i Hercegovina \n Federacija Bosne i Hercegovine \n Kanton Sarajevo \n \n MINISTARSTVO ZDRAVSTVA KANTONA SARAJEVO \n VAKCINACIJA PROTIV COVID-19 \n \n INFORMACIJE O VAKCINI"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="297dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/sputnikv" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Sputnik V"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:text="Ruska vakcina protiv koronavirusa SARS-CoV-2, poznata kao Sputnik V (čitati kao “Sputnjik Ve”) tj. Gam-Kovid-Vak (Гам-КОВИД-Вак) je dvokomponentna, dvodozna adenovirusna vektorska rekombinirana vakcina. Na ovoj platformi – adenovirusima – zasniva se i vakcina AstraZeneca/Oxford, AstraZeneca-Covishield te Johnson and Johnson/Janssen cjepivo protiv COVID-19. Podsjetimo, to su vakcine koje koriste adenoviruse kao transportna sredstva za genetičku poruku koja “naloži” našim ćelijama da proizvedu antigen virusa SARS-CoV-2 Spike protein, na koji onda naše imunološke ćelije stvaraju adekvatna antitijela i pokreće se ćelijski imunološki odgovor. Adenovirusi u ovim vakcinama jesu “živi”, ali kao da nisu – tehnologijama genetičke rekombinacije, ubacivanjem gena za Spike, oi virusi izgube mogućnost repliciranje tj. “razmnožavanja”. Virusi se ne razmnožavaju, jer nisu organizmi, pa je zato ova riječ u navodnicima."
+
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Efikasnost"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/unnamed" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:textAlignment="center"
+            android:text="Ruska vakcina Sputnjik V/Sputnik V Instituta Gamaleja bazirana na adenovirusnom vektoru s heterogenim dizajnom ima efikasnost od 91.6% nakon 2 doze. Štiti 100% od komplikacija i teške slike COVID-19 te smrtnog ishoda."
+            android:textColor="#000000"
+            android:textSize="10sp"
+
+            android:textStyle="italic" />
+
+
+
+        <Button
+            android:id="@+id/sputnikbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+
+
+            android:text="VRATI SE NA GLAVNI MENI" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dea5551a58c21c1c87c711f01520daac"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="128dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/grbovi" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Bosna i Hercegovina \n Federacija Bosne i Hercegovine \n Kanton Sarajevo \n \n MINISTARSTVO ZDRAVSTVA KANTONA SARAJEVO \n VAKCINACIJA PROTIV COVID-19 \n \n INFORMACIJE O VAKCINI"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="297dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/sinofarm" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Sinopharm"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:text="Vakcina Sinopharm je formulisana sa sojem SARS-CoV-2 virusa koji je inokulisan na Vero ćelijama radi kultivisanja, sakupljanja virusa, inaktivacije β propiolaktonom, koncentrisanja i pročišćavanja. Potom je virus adsorbovan sa adjuvansom aluminijuma.
+
+Pekinški institut za biološke proizvode stvorio je inaktivinu vakcinu protiv koronavirusa SARs-CoV-2 koje je državna kineska kompanija Sinopharm stavila u klinička ispitivanja.Ova vakcina se prvo davala u 2 doze, intramuskularno, u razmaku od 3 sedmice. Prema novim uputama, postoji mogućnost da će se s ovom vakcinom ići i na treću dozu. O tome ćemo više znati nakon kliničkih ispitivanja
+
+Vakcina je u pretkliničkim studijama testirana i na životinjama i to makaki rezus majmunima (1), a rezultati Faze I/II (2) su pokazali kako ova vakcina ne izaziva neke ozbiljne nuspojave i imunogenična je. Faza 3 je počela u julu u UAE te u avgustu 2020. u Maroku i Peruu.
+
+Ova vakcina ima puno odobrenje u Kini, Bahreinu, UAE, a hitno odobrenje u Argentini, Kambodži, Egiptu, Mađarskoj, Iranu, Iraku, Jordanu, Maldivima, Nepalu, Pakistanu, Peruu, Venecueli, Zimbabveu, Srbiji. U maju 2021. ju je odobrila WHO."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Efikasnost"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@drawable/unnamed" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:lineSpacingExtra="9sp"
+            android:textAlignment="center"
+            android:text="30. decembra 2020. Sinopharm je objavio da je vakcina imala 79.34% efikasnost, što je navelo kinesku vladu da je odobri. Ujedinjeni Arapski Emirati su odobrili ovu vakcinu (puno odobrenje) u septembru 2020. U januaru 2021. Mađarska postaje prva zemlja EU koja je autorizirala BBIBP-CorV Sinopharm vakcinu. Sinopharm još nije objavio detaljne rezultate njihovog ispitivanja faze 3."
+            android:textSize="10sp"
+            android:textColor="#000000"
+
+            android:textStyle="italic" />
+
+
+
+        <Button
+            android:id="@+id/sinopharmbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+
+
+            android:text="VRATI SE NA GLAVNI MENI" />
+
+
+    </LinearLayout>
+</ScrollView>
