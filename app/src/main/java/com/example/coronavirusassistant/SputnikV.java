@@ -22,8 +22,11 @@ public class SputnikV extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(SputnikV.this,Login.class));
+                finish();
+
 
             }
+
         });
     }
 }

@@ -22,8 +22,11 @@ public class sinopharm extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(sinopharm.this,Login.class));
+                finish();
+
 
             }
+
         });
     }
 }

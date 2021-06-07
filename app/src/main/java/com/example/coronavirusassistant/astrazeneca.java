@@ -25,8 +25,11 @@ public class astrazeneca extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(astrazeneca.this,Login.class));
+                finish();
 
             }
+
+
         });
 
     }

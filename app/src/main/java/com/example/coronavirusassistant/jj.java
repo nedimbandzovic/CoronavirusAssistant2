@@ -22,8 +22,11 @@ public class jj extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(jj.this,Login.class));
+                finish();
+
 
             }
+
         });
     }
 }

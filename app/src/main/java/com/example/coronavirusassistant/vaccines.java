@@ -46,31 +46,45 @@ public class vaccines extends AppCompatActivity {
                     case 1:
                         intent = new Intent(vaccines.this, SputnikV.class);
                         startActivity(intent);
+                        finish();
+
                         break;
 
                     case 2:
                         intent = new Intent(vaccines.this, astrazeneca.class);
                         startActivity(intent);
+                        finish();
+
                         break;
                     case 3:
                         intent = new Intent(vaccines.this, sinopharm.class);
                         startActivity(intent);
+                        finish();
+
                         break;
                     case 4:
                         intent = new Intent(vaccines.this, sinovac.class);
                         startActivity(intent);
+                        finish();
+
                         break;
                     case 5:
                         intent = new Intent(vaccines.this, moderna.class);
                         startActivity(intent);
+                        finish();
+
                         break;
                     case 6:
                         intent = new Intent(vaccines.this, jj.class);
                         startActivity(intent);
+                        finish();
+
                         break;
                     case 7:
                         intent = new Intent(vaccines.this, pfizer.class);
                         startActivity(intent);
+                        finish();
+
                         break;
 
 // and so on // .....

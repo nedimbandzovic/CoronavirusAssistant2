@@ -22,8 +22,11 @@ public class sinovac extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(sinovac.this,Login.class));
+                finish();
+
 
             }
+
         });
     }
 }

@@ -23,8 +23,11 @@ public class pfizer extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(pfizer.this,Login.class));
+                finish();
+
 
             }
+
         });
     }
 }

@@ -22,8 +22,11 @@ public class moderna extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(moderna.this,Login.class));
+                finish();
+
 
             }
+
         });
     }
 }
