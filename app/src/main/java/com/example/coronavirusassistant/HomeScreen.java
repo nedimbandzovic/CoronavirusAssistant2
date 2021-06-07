@@ -189,24 +189,6 @@ public class HomeScreen extends AppCompatActivity {
                     canvas.drawText("© 2021 Nedim Bandžović & Ademir Ahmetović",600, 1900, titlePaint);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     myPdfDocument.finishPage(myPage1);
 
                     File file=new File (Environment.getExternalStorageDirectory(),"/COVID-19Potvrda.pdf");

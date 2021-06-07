@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class Login extends AppCompatActivity {
     EditText username, password;
     Button login;
     Button register;
+    ImageView image, image2, image3, image4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,10 @@ public class Login extends AppCompatActivity {
         password=findViewById(R.id.password);
         register=findViewById(R.id.register);
         login=findViewById(R.id.login);
+        image=findViewById(R.id.zzjz);
+        image2=findViewById(R.id.mzks);
+        image3=findViewById(R.id.mzfbih);
+        image4=findViewById(R.id.mzbih);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +95,34 @@ public class Login extends AppCompatActivity {
                 startActivity(new Intent(Login.this, MainActivity.class));
             }
         });
+
+        image.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login.this, covid19ba.class));
+            }
+        });
+        image2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login.this, mzks.class));
+            }
+        });
+        image3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login.this, mzfbih.class));
+            }
+        });
+        image4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login.this, mcpbih.class));
+            }
+        });
+
+
+
 
 
 
