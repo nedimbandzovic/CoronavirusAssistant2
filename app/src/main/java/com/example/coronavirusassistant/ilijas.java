@@ -13,6 +13,7 @@ public class ilijas extends AppCompatActivity {
 
     ImageView img22, img23;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,8 @@ public class ilijas extends AppCompatActivity {
         img23 = findViewById(R.id.naprijed3);
         Button b1;
         b1=findViewById(R.id.ilijasCall);
+        Button b2;
+        b2=findViewById(R.id.ilijasMap);
 
 
         img22.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +51,13 @@ public class ilijas extends AppCompatActivity {
                 intent.setData(Uri.parse("tel:+387616202020"));
                 startActivity(intent);
                 finish();
+            }
+
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ilijas.this, ilijaslocation.class));
             }
 
         });

@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +17,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CoronavirusAssistant"
         android:usesCleartextTraffic="true">
-        <activity android:name=".hadzici"></activity>
+        <activity android:name=".hadzicilocation"></activity>
+        <activity android:name=".ilidzalocation" />
+        <activity android:name=".ilijaslocation" />
+        <activity android:name=".novosarajevolocation" />
+        <activity android:name=".zetralocation" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".hadzici" />
         <activity android:name=".ilidza" />
         <activity android:name=".novosarajevo" />
         <activity android:name=".ilijas" />

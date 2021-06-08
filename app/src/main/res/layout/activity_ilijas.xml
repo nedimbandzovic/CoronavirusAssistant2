@@ -85,7 +85,7 @@
 
 
         <Button
-            android:id="@+id/hadziciMap"
+            android:id="@+id/ilijasMap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20sp"

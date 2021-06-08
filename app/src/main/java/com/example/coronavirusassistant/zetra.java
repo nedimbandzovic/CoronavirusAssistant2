@@ -22,6 +22,8 @@ public class zetra extends AppCompatActivity {
         img = findViewById(R.id.nazad1);
         img2 = findViewById(R.id.naprijed1);
         b1=findViewById(R.id.zetraCall);
+        Button b2;
+        b2=findViewById(R.id.zetraMap);
 
 
         img.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +49,14 @@ public class zetra extends AppCompatActivity {
                 intent.setData(Uri.parse("tel:+387616161616161"));
                 startActivity(intent);
                 finish();
+            }
+
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(zetra.this, zetralocation.class));
+
             }
 
         });

@@ -12,7 +12,7 @@ import android.widget.ImageView;
 public class novosarajevo extends AppCompatActivity {
 
     ImageView img22, img23;
-    Button b1;
+    Button b1,b2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class novosarajevo extends AppCompatActivity {
         img22 = findViewById(R.id.nazad2);
         img23 = findViewById(R.id.naprijed2);
         b1=findViewById(R.id.novoSarajevoCall);
+        b2=findViewById(R.id.novoSarajevoMap);
 
 
         img22.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +48,13 @@ public class novosarajevo extends AppCompatActivity {
                 intent.setData(Uri.parse("tel:+38760101010101"));
                 startActivity(intent);
                 finish();
+            }
+
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(novosarajevo.this, novosarajevolocation.class));
             }
 
         });

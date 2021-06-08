@@ -20,7 +20,9 @@ public class hadzici extends AppCompatActivity {
 
         img22 = findViewById(R.id.nazad5);
         Button b1;
+        Button b2;
         b1=findViewById(R.id.hadziciCall);
+        b2=findViewById(R.id.hadziciMap);
 
 
         img22.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +41,14 @@ public class hadzici extends AppCompatActivity {
                 intent.setData(Uri.parse("tel:+387911919911"));
                 startActivity(intent);
                 finish();
+            }
+
+        });
+
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(hadzici.this, hadzicilocation.class));
             }
 
         });

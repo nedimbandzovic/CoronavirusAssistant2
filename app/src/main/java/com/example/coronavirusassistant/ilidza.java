@@ -22,6 +22,8 @@ public class ilidza extends AppCompatActivity {
         img23 = findViewById(R.id.naprijed4);
         Button b1;
         b1=findViewById(R.id.ilidzaCall);
+        Button b2;
+        b2=findViewById(R.id.ilidzaMap);
 
 
         img22.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +50,13 @@ public class ilidza extends AppCompatActivity {
                 intent.setData(Uri.parse("tel:+3870101010100"));
                 startActivity(intent);
                 finish();
+            }
+
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ilidza.this, ilidzalocation.class));
             }
 
         });
