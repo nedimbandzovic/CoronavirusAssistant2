@@ -191,7 +191,7 @@ public class HomeScreen extends AppCompatActivity {
 
                     myPdfDocument.finishPage(myPage1);
 
-                    File file=new File (Environment.getExternalStorageDirectory(),"/COVID-19Potvrda.pdf");
+                    File file=new File (Environment.getExternalStorageDirectory(),"/Download/COVID-19Potvrda.pdf");
                     Toast.makeText(getApplicationContext(), "Potvrda napravljena, istu možete naći u internoj memoriji uređaja", Toast.LENGTH_SHORT).show();
 
                     try {
