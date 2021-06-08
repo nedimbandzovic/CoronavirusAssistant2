@@ -6,19 +6,21 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Coronavirus Assistant"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoronavirusAssistant"
-        android:usesCleartextTraffic="true"
-        android:requestLegacyExternalStorage="true"
-        >
-
-        <activity android:name=".pfizer"></activity>
+        android:usesCleartextTraffic="true">
+        <activity android:name=".hadzici"></activity>
+        <activity android:name=".ilidza" />
+        <activity android:name=".novosarajevo" />
+        <activity android:name=".ilijas" />
+        <activity android:name=".zetra" />
+        <activity android:name=".pfizer" />
         <activity android:name=".jj" />
         <activity android:name=".sinovac" />
         <activity android:name=".sinopharm" />

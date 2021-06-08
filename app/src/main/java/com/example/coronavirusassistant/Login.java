@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class Login extends AppCompatActivity {
 
     EditText username, password;
-    Button login, lrn;
+    Button login, lrn,lrnmr;
     Button register;
     ImageView image, image2, image3, image4;
 
@@ -31,6 +31,7 @@ public class Login extends AppCompatActivity {
         image3=findViewById(R.id.mzfbih);
         image4=findViewById(R.id.mzbih);
         lrn=findViewById(R.id.learn);
+        lrnmr=findViewById(R.id.nadjilokaciju);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,6 +128,14 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(Login.this, vaccines.class));
             }
+        });
+        lrnmr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login.this, zetra.class));
+                finish();
+            }
+
         });
 
 

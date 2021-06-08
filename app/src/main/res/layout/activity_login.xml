@@ -89,6 +89,16 @@
 
 
             android:text="REGISTRUJ SE" />
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Dodatne informacije"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
         <Button
             android:id="@+id/learn"
             android:layout_width="match_parent"
@@ -97,6 +107,16 @@
 
 
             android:text="NAUČI VIŠE O VAKCINAMA" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="SAZNAJ VIŠE O VAKCINALNIM PUNKTOVIMA U KS"
+
+
+            android:id="@+id/nadjilokaciju"/>
+
 
         <TextView
             style="@style/TextAppearance.AppCompat.Body1"
@@ -140,6 +160,7 @@
             android:layout_gravity="center_horizontal"
 
             android:src="@drawable/mcpbih" />
+
 
 
     </LinearLayout>

@@ -29,7 +29,7 @@ import java.util.Random;
 public class HomeScreen extends AppCompatActivity {
 
     TextView tName, tJMBG, tVac, tVacp,tDate;
-    Button button, button2;
+    Button button, button2, button3;
     Bitmap bmp,bmp2;
     Bitmap scaledbmp,scaledbmp2;
     int pageWidth=1200;
@@ -51,6 +51,7 @@ public class HomeScreen extends AppCompatActivity {
         bmp2=BitmapFactory.decodeResource(getResources(), R.drawable.qrcode);
         scaledbmp2=Bitmap.createScaledBitmap(bmp2, 400, 400, false);
         button2=findViewById(R.id.logout);
+        button3=findViewById(R.id.nadjilokaciju);
 
 
         rand_int = rand.nextInt(10000000);
@@ -213,6 +214,7 @@ public class HomeScreen extends AppCompatActivity {
             }
 
         });
+
 
 
 
