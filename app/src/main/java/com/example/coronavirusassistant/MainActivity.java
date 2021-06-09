@@ -2,8 +2,11 @@ package com.example.coronavirusassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -11,18 +14,34 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.FileOutputStream;
+import java.lang.reflect.Type;
+import java.sql.Array;
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity  {
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
 
-        EditText username, password, NameAndSurname, JMBG;
+        EditText username, password, NameAndSurname, JMBG, Email;
         Spinner VaccinationPlace, Vaccine;
         Button register;
         Button login;
@@ -30,6 +49,9 @@ public class MainActivity extends AppCompatActivity  {
         password=findViewById(R.id.password);
         NameAndSurname=findViewById(R.id.NameAndSurname);
         JMBG=findViewById(R.id.JMBG);
+        Email=findViewById(R.id.Email);
+
+
 
         Spinner dropdown = findViewById(R.id.spinner1);
 
@@ -52,6 +74,8 @@ public class MainActivity extends AppCompatActivity  {
         long end = Timestamp.valueOf("2022-01-01 21:00:00").getTime();
         long diff = end - offset + 1;
         Timestamp rand = new Timestamp(offset + (long)(Math.random() * diff));
+        String vac=rand.toString();
+
         register.setOnClickListener(new View.OnClickListener(){
 
 
@@ -64,7 +88,9 @@ public class MainActivity extends AppCompatActivity  {
                 user.setJMBG(JMBG.getText().toString());
                 user.setVaccine(dropdown.getItemAtPosition(dropdown.getSelectedItemPosition()).toString());
                 user.setVaccinationPlace(seconddropdown.getItemAtPosition(seconddropdown.getSelectedItemPosition()).toString());
-                user.setVaccinationDate(rand.toString());
+                user.setVaccinationDate(vac);
+                user.setEmail(Email.getText().toString());
+
                 if (validateInput(user)){
 
                     UserDatabase userDatabase=UserDatabase.getUserDatabase(getApplicationContext());
@@ -78,8 +104,7 @@ public class MainActivity extends AppCompatActivity  {
                                 @Override
                                 public void run() {
                                     Toast.makeText(getApplicationContext(), "Uspješno ste se prijavili za vakcinaciju", Toast.LENGTH_SHORT).show();
-
-
+                                    sendEmail(user);
                                 }
                             });
                         }
@@ -108,9 +133,30 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
+
+
+
+    }
+    private void sendEmail(User user){
+        String mEmail = user.getEmail().toString();
+        String mSubject = "Potvrda za uspješnu registraciju za vakcinaciju protiv COVID-19";
+        String mMessage = "Ime i prezime:" + user.getNameAndSurname().toString() + "\n Datum vakcinacije: " + user.getVaccinationDate().toString() + "\n Odabrana vakcina: " + user.getVaccine().toString() + "\n Vakcinalni punkt: " + user.getVaccinationPlace().toString()+ "\n \n EMAIL POTVRDA POTPISANA OD STRANE MZKS I CS";
+        JavaMailAPI javaMailAPI = new JavaMailAPI(this, mEmail, mSubject, mMessage);
+        javaMailAPI.execute();
     }
 
+
+
+
+
+
+
+
+
     private Boolean validateInput (User user){
+
+
+
 
         if (user.getUsername().isEmpty()||user.getPassword().isEmpty()||user.getNameAndSurname().isEmpty()){
             return false;
@@ -118,4 +164,17 @@ public class MainActivity extends AppCompatActivity  {
         return true;
     }
 
-}
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@drawable/dea5551a58c21c1c87c711f01520daac"
+        android:background="@drawable/pozadina"
         android:orientation="vertical"
         tools:context=".MainActivity"
 

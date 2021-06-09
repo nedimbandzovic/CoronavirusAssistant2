@@ -23,6 +23,9 @@ public class User {
     @ColumnInfo (name="JMBG")
     String JMBG;
 
+    @ColumnInfo (name="Email")
+    String Email;
+
     @ColumnInfo (name="VaccinationPlace")
     String VaccinationPlace;
 
@@ -95,5 +98,12 @@ public class User {
 
     public void setVaccinationDate(String vaccinationDate) {
         VaccinationDate = vaccinationDate;
+    }
+
+    public String getEmail(){
+        return Email;
+    }
+    public void setEmail (String email){
+        this.Email=email;
     }
 }

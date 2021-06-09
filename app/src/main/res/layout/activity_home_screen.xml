@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:orientation="vertical"
-        android:background="@drawable/dea5551a58c21c1c87c711f01520daac"
+        android:background="@drawable/pozadina"
 
         >
 
