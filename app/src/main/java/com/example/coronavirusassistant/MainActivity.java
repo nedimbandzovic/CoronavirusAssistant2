@@ -2,18 +2,25 @@ package com.example.coronavirusassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.provider.ContactsContract;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.Task;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -21,12 +28,21 @@ import java.io.FileOutputStream;
 import java.lang.reflect.Type;
 import java.sql.Array;
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.io.IOException;
+import java.util.concurrent.Callable;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.RunnableFuture;
+
+import javax.xml.transform.Result;
+
+import static android.os.AsyncTask.execute;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -50,6 +66,8 @@ public class MainActivity extends AppCompatActivity  {
         NameAndSurname=findViewById(R.id.NameAndSurname);
         JMBG=findViewById(R.id.JMBG);
         Email=findViewById(R.id.Email);
+        TextView tv2;
+        tv2=findViewById(R.id.tv2);
 
 
 
@@ -76,11 +94,14 @@ public class MainActivity extends AppCompatActivity  {
         Timestamp rand = new Timestamp(offset + (long)(Math.random() * diff));
         String vac=rand.toString();
 
+
         register.setOnClickListener(new View.OnClickListener(){
 
 
             @Override
             public void onClick(View v) {
+
+
                 User user=new User();
                 user.setUsername(username.getText().toString());
                 user.setPassword(password.getText().toString());
@@ -91,11 +112,17 @@ public class MainActivity extends AppCompatActivity  {
                 user.setVaccinationDate(vac);
                 user.setEmail(Email.getText().toString());
 
-                if (validateInput(user)){
+
+
+
+
+
+                if (validateInput(user) ){
 
                     UserDatabase userDatabase=UserDatabase.getUserDatabase(getApplicationContext());
                     UserDao userDao=userDatabase.userDao();
-                    new Thread (new Runnable(){
+
+                        new Thread (new Runnable(){
 
                         @Override
                         public void run(){
@@ -105,12 +132,39 @@ public class MainActivity extends AppCompatActivity  {
                                 public void run() {
                                     Toast.makeText(getApplicationContext(), "Uspješno ste se prijavili za vakcinaciju", Toast.LENGTH_SHORT).show();
                                     sendEmail(user);
+
                                 }
                             });
                         }
 
 
                     }).start();
+                    register.setEnabled(false);
+                    login.setEnabled(false);
+
+                    new CountDownTimer(7000, 10) { //Set Timer for 5 seconds
+                        public void onTick(long millisUntilFinished) {
+                            tv2.setText("Sačekajte da vas preusmjerimo na glavnu stranicu:" + millisUntilFinished / 1000);
+                            onBackPressed();
+
+
+
+
+                            startActivity(new Intent(MainActivity.this, Login.class));
+
+
+                        }
+
+                        @Override
+                        public void onFinish() {
+                            register.setEnabled(true);
+                            login.setEnabled(false);
+
+                        }
+                    }.start();
+
+
+
 
 
                 }else{
@@ -119,6 +173,8 @@ public class MainActivity extends AppCompatActivity  {
 
             }
         });
+
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,12 +187,9 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
-
-
-
-
-
     }
+
+
     private void sendEmail(User user){
         String mEmail = user.getEmail().toString();
         String mSubject = "Potvrda za uspješnu registraciju za vakcinaciju protiv COVID-19";
@@ -147,9 +200,10 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
-
-
-
+    @Override
+    public void onBackPressed() {
+        return;
+    }
 
 
 
@@ -166,6 +220,7 @@ public class MainActivity extends AppCompatActivity  {
 
 
     }
+
 
 
 

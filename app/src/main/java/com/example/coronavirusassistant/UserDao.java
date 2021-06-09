@@ -18,5 +18,5 @@ public interface UserDao {
 
 
     @Query("SELECT * FROM users WHERE username =:username")
-    public User getEmail(String username);
+    User getEmail(String username);
 }
