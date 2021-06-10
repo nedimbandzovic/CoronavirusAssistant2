@@ -40,6 +40,7 @@ public class Login extends AppCompatActivity {
         image4=findViewById(R.id.mzbih);
         lrn=findViewById(R.id.learn);
         lrnmr=findViewById(R.id.nadjilokaciju);
+        ImageView slika=findViewById(R.id.ugasime);
 
 
 
@@ -153,7 +154,14 @@ public class Login extends AppCompatActivity {
 
 
 
+        slika.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                finish();
+
+            }
+        });
 
 
 
