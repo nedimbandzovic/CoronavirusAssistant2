@@ -29,4 +29,7 @@ public class sinopharm extends AppCompatActivity {
 
         });
     }
+    public void onBackPressed(){
+        return;
+    }
 }

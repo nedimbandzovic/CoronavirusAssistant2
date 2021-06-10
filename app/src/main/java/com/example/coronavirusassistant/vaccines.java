@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 public class vaccines extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class vaccines extends AppCompatActivity {
         setContentView(R.layout.activity_vaccines);
 
         Spinner dropdown = (Spinner)findViewById(R.id.spinner1);
+        Button b4=findViewById(R.id.nadjilokaciju2);
 
 //create a list of items for the spinner.
         String[] items = new String[]{"Odaberite vakcinu", "Sputnik V", "AstraZeneca-CoviShield", "Sinopharm BBIpV", "Sinovac", "Moderna", "Johnson & Johnson", "Pfizer-BioNTech"};
@@ -101,7 +103,20 @@ public class vaccines extends AppCompatActivity {
 
         });
 
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                startActivity(new Intent(vaccines.this, Login.class));
+                finish();
+
+            }
+        });
+
+
+    }
+    public void onBackPressed(){
+        return;
     }
         }
 

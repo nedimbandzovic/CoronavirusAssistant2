@@ -59,4 +59,7 @@ public class novosarajevo extends AppCompatActivity {
 
         });
     }
+    public void onBackPressed(){
+        return;
+    }
 }

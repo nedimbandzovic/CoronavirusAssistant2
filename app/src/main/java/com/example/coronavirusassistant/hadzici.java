@@ -54,4 +54,7 @@ public class hadzici extends AppCompatActivity {
         });
 
     }
+    public void onBackPressed(){
+        return;
+    }
 }

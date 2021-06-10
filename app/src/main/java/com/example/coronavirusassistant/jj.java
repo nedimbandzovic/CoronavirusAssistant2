@@ -29,4 +29,7 @@ public class jj extends AppCompatActivity {
 
         });
     }
+    public void onBackPressed(){
+        return;
+    }
 }

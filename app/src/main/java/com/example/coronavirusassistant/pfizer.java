@@ -30,4 +30,7 @@ public class pfizer extends AppCompatActivity {
 
         });
     }
+    public void onBackPressed(){
+        return;
+    }
 }

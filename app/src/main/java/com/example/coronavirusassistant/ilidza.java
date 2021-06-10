@@ -61,4 +61,7 @@ public class ilidza extends AppCompatActivity {
 
         });
     }
+    public void onBackPressed(){
+        return;
+    }
 }

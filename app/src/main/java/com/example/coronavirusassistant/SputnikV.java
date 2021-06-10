@@ -29,4 +29,7 @@ public class SputnikV extends AppCompatActivity {
 
         });
     }
+    public void onBackPressed(){
+        return;
+    }
 }

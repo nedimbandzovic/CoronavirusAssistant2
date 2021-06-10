@@ -33,6 +33,9 @@ public class astrazeneca extends AppCompatActivity {
         });
 
     }
+    public void onBackPressed(){
+        return;
+    }
 
 
 }

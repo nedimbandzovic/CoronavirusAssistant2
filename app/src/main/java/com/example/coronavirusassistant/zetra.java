@@ -49,6 +49,8 @@ public class zetra extends AppCompatActivity {
                 intent.setData(Uri.parse("tel:+387616161616161"));
                 startActivity(intent);
                 finish();
+
+
             }
 
         });

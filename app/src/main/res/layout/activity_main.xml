@@ -36,6 +36,8 @@
         android:textColor="#000000"/>
 
 
+
+
     <EditText
 
         android:id="@+id/username"
@@ -148,6 +150,7 @@
         android:textStyle="italic
 " />
 
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -175,6 +178,15 @@
 
 
         android:id="@+id/login"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="VRATI SE NA GLAVNI MENI"
+
+
+        android:id="@+id/register2"/>
 
 
 

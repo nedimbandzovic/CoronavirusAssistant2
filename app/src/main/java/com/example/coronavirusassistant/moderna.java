@@ -29,4 +29,7 @@ public class moderna extends AppCompatActivity {
 
         });
     }
+    public void onBackPressed(){
+        return;
+    }
 }

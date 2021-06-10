@@ -29,4 +29,7 @@ public class sinovac extends AppCompatActivity {
 
         });
     }
+    public void onBackPressed(){
+        return;
+    }
 }

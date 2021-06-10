@@ -17,6 +17,7 @@ import java.util.Date;
 
 public class Login extends AppCompatActivity {
 
+
     EditText username, password;
     Button login, lrn,lrnmr;
     Button register;
@@ -25,6 +26,7 @@ public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
@@ -161,5 +163,9 @@ public class Login extends AppCompatActivity {
 
 
 
+    }
+
+    public void onBackPressed(){
+        return;
     }
 }
