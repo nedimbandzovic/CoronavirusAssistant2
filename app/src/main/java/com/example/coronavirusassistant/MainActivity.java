@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                if (validateInput(user) & !result.equals(user.getUsername().toString())) {
+                if (validateInput(user) & !result.equals(user.getUsername().toString()) & user.getPassword().toString().length()>6 & user.getJMBG().length()==13) {
 
                     UserDatabase userDatabase = UserDatabase.getUserDatabase(getApplicationContext());
                     UserDao userDao = userDatabase.userDao();
@@ -218,6 +218,28 @@ public class MainActivity extends AppCompatActivity {
 
 
                 }
+                else if (user.getPassword().toString().length()<6){
+                    Toast.makeText(getApplicationContext(), "Vaša sifra mora imati više od šest simbola", Toast.LENGTH_SHORT).show();
+
+
+                }
+                else if (user.getJMBG().toString().length()<13){
+                    Toast.makeText(getApplicationContext(), "Uneseni JMBG nije tačan. JMBG mora imati 13 brojeva!", Toast.LENGTH_SHORT).show();
+
+
+                }
+
+                else if (user.getJMBG().toString().length()>13){
+                    Toast.makeText(getApplicationContext(), "Uneseni JMBG nije tačan. JMBG mora imati 13 brojeva!", Toast.LENGTH_SHORT).show();
+
+
+                }
+                else if (user.getPassword().toString().length()==6){
+                    Toast.makeText(getApplicationContext(), "Vaša sifra mora imati više od šest simbola", Toast.LENGTH_SHORT).show();
+
+
+                }
+
 
                 }
 

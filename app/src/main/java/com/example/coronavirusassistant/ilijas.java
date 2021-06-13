@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 public class ilijas extends AppCompatActivity {
 
-    ImageView img22, img23;
+    ImageView img22, img23, img8;
 
 
     @Override
@@ -25,6 +25,7 @@ public class ilijas extends AppCompatActivity {
         b1=findViewById(R.id.ilijasCall);
         Button b2;
         b2=findViewById(R.id.ilijasMap);
+        img8=findViewById(R.id.ugasime3);
 
 
         img22.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +59,13 @@ public class ilijas extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ilijas.this, ilijaslocation.class));
+            }
+
+        });
+        img8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ilijas.this, Login.class));
             }
 
         });

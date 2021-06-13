@@ -14,7 +14,14 @@
         tools:context=".MainActivity"
 
         >
+        <ImageView
+            android:id="@+id/ugasime3"
+            android:layout_width="30dp"
+            android:layout_height="55dp"
+            android:layout_gravity="left"
 
+
+            android:src="@drawable/nazad" />
 
         <ImageView
             android:id="@+id/imageView2"

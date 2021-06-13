@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 public class hadzici extends AppCompatActivity {
 
-    ImageView img22;
+    ImageView img22, img8181;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class hadzici extends AppCompatActivity {
         Button b2;
         b1=findViewById(R.id.hadziciCall);
         b2=findViewById(R.id.hadziciMap);
+        img8181=findViewById(R.id.ugasime5);
 
 
         img22.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +50,14 @@ public class hadzici extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(hadzici.this, hadzicilocation.class));
+            }
+
+        });
+
+        img8181.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(hadzici.this, Login.class));
             }
 
         });

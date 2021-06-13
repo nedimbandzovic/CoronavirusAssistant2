@@ -158,7 +158,10 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                finish();
+                finishAffinity();
+
+                System.exit(0);
+
 
             }
         });

@@ -13,6 +13,7 @@ public class zetra extends AppCompatActivity {
 
     ImageView img, img2;
     Button b1;
+    ImageView img6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,7 @@ public class zetra extends AppCompatActivity {
         b1=findViewById(R.id.zetraCall);
         Button b2;
         b2=findViewById(R.id.zetraMap);
-
+        img6=findViewById(R.id.ugasime1);
 
         img.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,5 +63,17 @@ public class zetra extends AppCompatActivity {
             }
 
         });
+        img6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(zetra.this, Login.class));
+
+            }
+
+        });
     }
+    public void onBackPressed(){
+        return;
+    }
+
 }
